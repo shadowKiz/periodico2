@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
+    <title>Document</title>
+
+    <script language="javascript1.1">
+       
+     
+        var dn;
+        c1=new Image(); c1.src="http://www.cyberiapc.com/aascripter/samples/Clocks/c1.gif";
+        c2=new Image(); c2.src="http://www.cyberiapc.com/aascripter/samples/Clocks/c2.gif";
+        c3=new Image(); c3.src="http://www.cyberiapc.com/aascripter/samples/Clocks/c3.gif";
+        c4=new Image(); c4.src="http://www.cyberiapc.com/aascripter/samples/Clocks/c4.gif";
+        c5=new Image(); c5.src="http://www.cyberiapc.com/aascripter/samples/Clocks/c5.gif";
+        c6=new Image(); c6.src="http://www.cyberiapc.com/aascripter/samples/Clocks/c6.gif";
+        c7=new Image(); c7.src="http://www.cyberiapc.com/aascripter/samples/Clocks/c7.gif";
+        c8=new Image(); c8.src="http://www.cyberiapc.com/aascripter/samples/Clocks/c8.gif";
+        c9=new Image(); c9.src="http://www.cyberiapc.com/aascripter/samples/Clocks/c9.gif";
+        c0=new Image(); c0.src="http://www.cyberiapc.com/aascripter/samples/Clocks/c0.gif";
+        cb=new Image(); cb.src="http://www.cyberiapc.com/aascripter/samples/Clocks/cb.gif";
+        cam=new Image(); cam.src="http://www.cyberiapc.com/aascripter/samples/Clocks/cam.gif";
+        cpm=new Image(); cpm.src="http://www.cyberiapc.com/aascripter/samples/Clocks/cpm.gif";
+        
+        function extract(h,m,s,type){
+        if (!document.images)
+        return;
+        if (h<=9){
+        document.images.a.src=cb.src;
+        document.images.b.src=eval("c"+h+".src");
+        }
+        else {
+        document.images.a.src=eval("c"+Math.floor(h/10)+".src");
+        document.images.b.src=eval("c"+(h%10)+".src");
+        }
+        if (m<=9){
+        document.images.d.src=c0.src;
+        document.images.e.src=eval("c"+m+".src");
+        }
+        else {
+        document.images.d.src=eval("c"+Math.floor(m/10)+".src");
+        document.images.e.src=eval("c"+(m%10)+".src");
+        }
+        if (s<=9){
+        document.g.src=c0.src;
+        document.images.h.src=eval("c"+s+".src");
+        }
+        else {
+        document.images.g.src=eval("c"+Math.floor(s/10)+".src");
+        document.images.h.src=eval("c"+(s%10)+".src");
+        }
+        if (dn=="AM")
+        document.j.src=cam.src;
+        else
+        document.images.j.src=cpm.src;
+        }
+        
+        function show3(){
+        if (!document.images)
+        return;
+        var Digital=new Date();
+        var hours=Digital.getHours();
+        var minutes=Digital.getMinutes();
+        var seconds=Digital.getSeconds();
+        dn="AM" ;
+        if ((hours>=12)&&(minutes>=1)||(hours>=13)){
+        dn="PM";
+        hours=hours-12;
+        }
+        if (hours==0)
+        hours=12;
+        extract(hours,minutes,seconds,dn);
+        setTimeout("show3()",1000);
+        }
+        //-->
+        </script>
+         <script >
+            var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+            var f=new Date();
+            document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+        document.body.style.background="f3f3f3 ";
+            </script>
+</head>
+<body onLoad="show3()">
+    <img src="cb.gif" name="a"><img src="cb.gif" name="b"><img src="http://www.cyberiapc.com/aascripter/samples/Clocks/colon.gif" name="c"><img src="cb.gif" name="d"><img src="cb.gif" name="e"><img src="http://www.cyberiapc.com/aascripter/samples/Clocks/colon.gif" name="f"><img src="cb.gif" name="g"><img src="cb.gif" name="h"><img src="cam.gif" name="j">
+    
+    <div id="centro1">
+       
+          <img id="img2" src="not5.jpg" alt="">
+          <h2>Among Us: ¿Cómo ser el impostor siempre?, ¿Hay trucos?</h2>
+          <p>QUE NO TE ENGAÑEN, ¿Es posible ser el impostor siempre en todas las partidas de Among Us gracias a algún truco? Aquí te desvelamos lo que se sabe al respecto y cuál es la verdad.</p>
+       <P>Ser el impostor en Among Us es claramente el rol más divertido del juego. Todos los jugadores esperan con ansias ese momento en el que les toca matar a los tripulantes, pero, ¿es posible convertirse en el impostor siempre en todas las partidas? ¿Existe algún truco para ello? A continuación respondemos a esta pregunta y te contamos todo lo que se sabe.
+
+    </P>
+        </div>
+      </div>
+    <div id="ext">
+        <img id="img"src="titulo.jpg">
+        <div id="int">
+          <img id="imgs" src="not1.jpg" alt="">
+       <h3>Chris Lee, director de Halo Infinite, abandona el proyecto</h3>
+       <p>Es el segundo director que pierde la próxima y ambiciosa entrega de las aventuras del Jefe Maestro.</p>
+        </div>
+        <div id="int2">
+            <img id="imgs" src="not2.jpg" alt="">
+            <h3>Así es la nueva PlayStation App, la aplicación para acompañar PS5 y PS4, disponible hoy</h3>
+            <p>La aplicación de iOS y Android se renueva con nuevo diseño, más funciones de chat de voz y grupos, características para PS5, PS Store integrada y más.</p>
+        </div>      
+       
+ </div>
+
+          <div id="int3">
+            <img id="imgs" src="not3.jpg" alt="">
+            <h3>AMD anuncia las Radeon RX 6800 XT, a la venta el 18 de noviembre por 649 dólares</h3>
+            <p>AMD nos ha presentado sus nuevas gráficas RDNA 2 entre las que se incluye la AMD Radeon RX 6800 XT, su GPU que estará disponible en España el 18 de noviembre.</p>
+        </div>
+
+        <div id="int4">
+            <img id="imgs" src="not4.jpg" alt="">
+            <h3>Cyberpunk 2077: Un desarrollador denuncia amenazas de muerte tras el anuncio del retraso</h3>
+          <p>El juego de CD Projekt RED llegará el 10 de diciembre y no el 19 de noviembre, tal y como estaba planeado; algunos fans han amenazado a sus creadores.</p>
+        </div>
+       
+       
+</body>
+</html>
